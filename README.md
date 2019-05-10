@@ -8,7 +8,9 @@ So that I can run end-to-end tests whenever I am ready to commit working code.
 ```
 
 ### A Note on Toolchains and Tech stacks
-While this kata was developed using a GitHub/Travis-CI/Docker/Selenium tech stack, there is no one right way to play any of these cards. The ultimate goals is to incrementally grow the pipeline until all cards are played and the end result.
+While this kata was developed using a GitHub/Travis-CI/Docker/Selenium tech stack, there is no one right way to play any of these cards. The ultimate goal is to incrementally grow the pipeline until all cards are complete.
+
+# Provided template details go here
 
 ## Card: Front End Pipeline
 ```
@@ -18,7 +20,7 @@ I want the solution to build and unit tests to run everytime I push the front en
 
 So that I can see if there are any errors.
 ```
-Acceptance Criteria: Pushing code to the repo triggers a passing build and unit test run.
+Acceptance Criteria: Pushing code to the repo triggers a build and, upon build success, runs unit tests.
 
 ## Card: Back End Pipeline
 ```
@@ -28,7 +30,7 @@ I want the solution to build and unit tests to run everytime I push back end cod
 
 So that I can see if there are any errors.
 ```
-Acceptance Criteria: Pushing code to the repo triggers a passing build and unit test run.
+Acceptance Criteria: Pushing code to the repo triggers a build and, upon build success, runs unit tests.
 
 ## Card: Containerize Front End Application
 ```
@@ -58,7 +60,7 @@ I want to have end-to-end tests written,
 
 So that I can confirm my front end and back end are communicating correctly.
 ```
-Acceptance Criteria: With both containers running, integration tests should pass by pushing a button and receiving expected result. Tests fail if containers are not running.
+Acceptance Criteria: With both containers running, end-to-end tests should pass by pushing a button and receiving expected result. Tests fail if containers are not running.
 
 ## Card: Image Refresh
 ```
@@ -68,7 +70,7 @@ I want to have a new image created whenever the code changes,
 
 So that the container always reflects the current version of the source code.
 ```
-Acceptance Criteria: When code is pushed an udpated image is created
+Acceptance Criteria: When code is pushed, an updated image is created.
 
 ## Card: End-to-End Testing in Pipeline
 ```
@@ -78,7 +80,7 @@ I want to have my CI pipeline run end-to-end tests as part of the build process,
 
 So that I know my application will run.
 ```
-Acceptance Criteria: End-to-end tests pass as part of the build request.
+Acceptance Criteria: End-to-end tests run as part of the build process.
 
 ## Card: End-to-End Testing Only on Pull Request Build
 ```
@@ -90,3 +92,12 @@ So that I am not spending server resources at inappropriate times.
 ```
 Acceptance Criteria: End-to-End tests do not run when pushing code, only when a pull request is created.
 
+## Card: Build Process Runs When Amending Pull Request
+```
+As a software Artisan,
+
+I want my build process to be triggered when making changes to the code included in a pull request,
+
+So that I know the updated code is being checked.
+```
+Acceptance Criteria: New or updated code pushed to an existing pull request triggers a build and, upon build success, runs all tests.
