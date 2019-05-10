@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CIKataBackEnd.WebApi
+namespace CIKataFrontEnd.React
 {
     public class Program
     {

@@ -1,4 +1,3 @@
-using System;
 using CIKataBackEnd.WebApi.Domain;
 using Shouldly;
 using Xunit;
