@@ -11,7 +11,7 @@ So that I can run end-to-end tests whenever I am ready to commit working code.
 While this kata was developed using a GitHub/Travis-CI/Docker/Selenium tech stack, there is no one right way to play any of these cards. The ultimate goal is to incrementally grow the pipeline until all cards are complete.
 
 # Template Code
-A skeleton application with a front end and a back end has been provided.
+A skeleton application with a front end and a back end has been provided. Feel free to fork this repo or download a zipfile of the code in order to create a wholly-new repo. The goal is to allow you to focus on the CI portion rather than developing an MVP application.
 
 ### .NET Core Front End
 
