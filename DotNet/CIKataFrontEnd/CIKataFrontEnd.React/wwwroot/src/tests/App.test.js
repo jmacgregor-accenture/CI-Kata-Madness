@@ -10,7 +10,3 @@ describe('App', () => {
         expect(component.find('this is not an element').length).toBe(1);
     })
 });
-
-
-
-
