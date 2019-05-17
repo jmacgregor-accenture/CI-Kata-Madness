@@ -13,6 +13,8 @@ While this kata was developed using a GitHub/Travis-CI/Docker/Selenium tech stac
 # Template Code
 A skeleton application with a front end and a back end has been provided. Feel free to fork this repo or download a zipfile of the code in order to create a wholly-new repo. The goal is to allow you to focus on the CI portion rather than developing an MVP application.
 
+## DO NOT FORGET TO PRACTICE RED-GREEN-REFACTOR WHEN CONFIGURING YOUR PIPELINE; FALSE POSITIVES ARE EASY TO REACH 
+
 ### .NET Core Front End
 
 The front end is a React single page app. In order to use webpack to bundle the javascript, it is nested in a DotNetCore solution.
