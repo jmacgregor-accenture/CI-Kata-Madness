@@ -13,7 +13,7 @@ namespace CIKataBackEnd.Tests
 
             var result = businessLogicService.MakeUpValue();
             
-            result.ShouldContain("successful");
+            result.ShouldContain("this value is here in order to fail this test like a student who never enrolled");
         }
     }
 }
