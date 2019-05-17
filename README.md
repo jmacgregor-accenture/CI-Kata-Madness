@@ -15,18 +15,21 @@ A skeleton application with a front end and a back end has been provided. Feel f
 
 ## DO NOT FORGET TO PRACTICE RED-GREEN-REFACTOR WHEN CONFIGURING YOUR PIPELINE; FALSE POSITIVES ARE EASY TO REACH 
 
-### .NET Core Front End
+### .NET Core MVC Front End
 
-The front end is a React single page app. In order to use webpack to bundle the javascript, it is nested in a DotNetCore solution.
+The front end is an ASP.NET Core MVC solution that uses the default template with some modifications for this kata.
 
-To install the dependencies, navigate to the CIKataFrontEnd.React directory and run `npm install` followed by `npm run wbp` in order to create the webpack bundle. If you make any changes to the HTML or Javascript code, you will need to run `npm run wbp` again. 
+The index page has a button that is wired to a Values controller. The Values controller calls a Value service, which is intended to call the provided back end project API end point. **NOTE** The URL in the ValueService.GetValue method will need to be changed unless you configure a container to be mapped to that port.
 
-To run unit tests, in the same directory run `npm test`. The test should pass. When you run this locally, the button will not work until you are able to call the running back end project. 
+There is a single test written against the ValueService.GetValue method that will fail due to connection issues from the start.
 
-**Note**: the current URL being fetched in `App.js:10` is a placeholder and will need to be updated to actually reach the back end project.
+There are no integration/end-to-end/smoke tests provided as there is a card in the kata calling for that.
 
 ### .NET Core Back End
-A bare bones web api project has been provided with a single end point that returns hardcoded data. There is a single test that should pass included in this solution.
+
+The back end project is a scaled down .NET Core Web API template with only one endpoint that returns a single hardcoded message. 
+
+There is a single test written against the BusinessLogic class that should fail until it is rewritten.
 
 # Card Backlog
 
