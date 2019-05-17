@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIKataFrontEnd.React", "CIK
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIKataFrontEnd.Mvc", "CIKataFrontEnd.Mvc\CIKataFrontEnd.Mvc.csproj", "{62B7143F-D613-4D43-8D5D-9633493D76C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIKataFrontEnd.Tests", "CIKataFrontEnd.Tests\CIKataFrontEnd.Tests.csproj", "{C2C451EB-A2B4-41AD-972F-C54ED9D637EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{62B7143F-D613-4D43-8D5D-9633493D76C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62B7143F-D613-4D43-8D5D-9633493D76C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62B7143F-D613-4D43-8D5D-9633493D76C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C451EB-A2B4-41AD-972F-C54ED9D637EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C451EB-A2B4-41AD-972F-C54ED9D637EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C451EB-A2B4-41AD-972F-C54ED9D637EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C451EB-A2B4-41AD-972F-C54ED9D637EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
