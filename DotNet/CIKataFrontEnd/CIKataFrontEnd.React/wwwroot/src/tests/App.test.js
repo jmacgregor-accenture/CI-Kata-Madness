@@ -7,7 +7,7 @@ describe('App', () => {
     it('should contain a div', () => {
         const component = shallow(<App />);
 
-        expect(component.find('div').length).toBe(1);
+        expect(component.find('this is not an element').length).toBe(1);
     })
 });
 
